@@ -1,0 +1,21 @@
+body {
+  background-color: #E5E5E5;
+}
+div.section {
+  border-width: 1px 1px 2px;
+  border-style: solid;
+  border-color: #D8D8D8;
+  -moz-border-top-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  border-image: none;
+  background-color: #FFF;
+  margin: 10px 0px 20px;
+  padding: 20px;
+}
+div.section h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0px auto 15px;
+}
