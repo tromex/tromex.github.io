@@ -93,6 +93,21 @@ div.section h2.degree {
   margin-bottom: 35px;
   font-weight: 600;
 }
+div.section div.subsection div.simplified h3 {
+  font-size: 14px;
+  padding-left: 10px;
+  margin-top: 2px;
+  font-weight: 600;
+}
+div.section div.subsection div.simplified h3:before {
+  content: '- ';
+}
+div.section div.subsection div.simplified button.more {
+  margin-left: 30px;
+}
+div.section div.subsection div.extended {
+  display: none;
+}
 div.section div.project h3,
 div.section div.paper h3,
 div.section div.study h3 {

@@ -115,6 +115,29 @@ div.section {
         }
     }
 
+    div.subsection {
+        div.simplified {
+            h3 {
+                font-size: 14px;
+                padding-left: 10px;
+                margin-top: 2px;
+                font-weight: 600;
+
+                &:before {
+                    content: '- ';
+                }
+            }
+
+            button.more {
+                margin-left: 30px;
+            }
+        }
+
+        div.extended {
+            display: none;
+        }
+    }
+
     div.project, div.paper, div.study {
         h3 {
             font-size: 20px;
