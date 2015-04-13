@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700);
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700');
 body {
   background-color: #E5E5E5;
   font-family: 'Open Sans', sans-serif;
@@ -12,6 +12,10 @@ body {
   margin: 0px;
   padding: 0px;
 }
+img.me {
+  width: 150px;
+  float: right;
+}
 .text-light {
   font-weight: 300;
 }
@@ -22,10 +26,6 @@ div.section {
   border-width: 1px 1px 2px;
   border-style: solid;
   border-color: #D8D8D8;
-  -moz-border-top-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
   border-image: none;
   background-color: #FFF;
   margin: 10px 0px 20px;
@@ -34,22 +34,21 @@ div.section {
 div.section.closed div.section-content {
   display: none;
 }
-div.section span.col-cv-left {
+div.section p.item {
+  margin-bottom: 0px;
+}
+div.section p.item span.col-cv-left {
   width: 220px;
   text-align: right;
   float: left;
 }
 @media (max-width: 768px) {
-  div.section span.col-cv-left {
+  div.section p.item span.col-cv-left {
     width: 110px;
   }
 }
-div.section span.col-cv-right {
+div.section p.item span.col-cv-right {
   padding-left: 70px;
-  float: left;
-}
-div.section div.row div {
-  padding-right: 5%;
 }
 div.section h1 {
   font-size: 18px;

@@ -1,6 +1,6 @@
 
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700);
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700');
 
 body {
     background-color: #E5E5E5;
@@ -17,6 +17,11 @@ body {
     padding: 0px;
 }
 
+img.me {
+    width: 150px;
+    float: right;
+}
+
 .text-light {
     font-weight: 300;
 }
@@ -29,10 +34,6 @@ div.section {
     border-width: 1px 1px 2px;
     border-style: solid;
     border-color: #D8D8D8;
-    -moz-border-top-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
     border-image: none;
     background-color: #FFF;
     margin: 10px 0px 20px;
@@ -43,24 +44,23 @@ div.section {
     }
 
 
-    span {
-        &.col-cv-left {
-            width: 220px;
-            @media (max-width: 768px) {
-                width: 110px;
+    p.item {
+        margin-bottom: 0px;
+
+        span {
+            &.col-cv-left {
+                width: 220px;
+                @media (max-width: 768px) {
+                    width: 110px;
+                }
+                text-align: right;
+                float: left;
             }
-            text-align: right;
-            float: left;
-        }
 
-        &.col-cv-right {
-            padding-left: 70px;
-            float: left;
+            &.col-cv-right {
+                padding-left: 70px;
+            }
         }
-    }
-
-    div.row div {
-        padding-right: 5%;
     }
 
     h1 {
