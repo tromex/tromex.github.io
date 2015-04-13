@@ -41,7 +41,10 @@ div.section.closed div.section-content {
 div.section button.open {
   position: absolute;
   top: 12px;
-  right: 15px;
+  left: 0px;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
   border: none;
   background-color: transparent;
   font-size: 26px;
