@@ -73,37 +73,53 @@ div.section h2.degree {
   font-weight: 600;
 }
 div.section div.project h3,
-div.section div.paper h3 {
+div.section div.paper h3,
+div.section div.study h3 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
 }
 div.section div.project p.company,
-div.section div.paper p.company {
+div.section div.paper p.company,
+div.section div.study p.company,
+div.section div.project p.institution,
+div.section div.paper p.institution,
+div.section div.study p.institution {
   color: #666;
   font-style: italic;
   margin-bottom: 0px;
 }
 div.section div.project p.link,
-div.section div.paper p.link {
+div.section div.paper p.link,
+div.section div.study p.link {
   margin-top: 5px;
 }
 div.section div.project p.task,
-div.section div.paper p.task {
+div.section div.paper p.task,
+div.section div.study p.task,
+div.section div.project p.info,
+div.section div.paper p.info,
+div.section div.study p.info {
   margin-left: 30px;
   margin-bottom: 0px;
 }
 div.section div.project p.task:before,
-div.section div.paper p.task:before {
+div.section div.paper p.task:before,
+div.section div.study p.task:before,
+div.section div.project p.info:before,
+div.section div.paper p.info:before,
+div.section div.study p.info:before {
   content: '- ';
 }
 div.section div.project p.tech,
-div.section div.paper p.tech {
+div.section div.paper p.tech,
+div.section div.study p.tech {
   margin-left: 30px;
   margin-top: 5px;
 }
 div.section div.project p.tech:before,
-div.section div.paper p.tech:before {
+div.section div.paper p.tech:before,
+div.section div.study p.tech:before {
   content: '- Technologies: ';
   font-weight: 700;
 }
