@@ -1,6 +1,28 @@
 
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700);
+
 body {
     background-color: #E5E5E5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#me {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    border: 0px;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.text-black {
+    color: #000;
 }
 
 div.section {
@@ -16,9 +38,99 @@ div.section {
     margin: 10px 0px 20px;
     padding: 20px;
 
+    &.closed div.section-content {
+        display: none;
+    }
+
+
+    span {
+        &.col-cv-left {
+            width: 220px;
+            @media (max-width: 768px) {
+                width: 110px;
+            }
+            text-align: right;
+            float: left;
+        }
+
+        &.col-cv-right {
+            padding-left: 70px;
+            float: left;
+        }
+    }
+
+    div.row div {
+        padding-right: 5%;
+    }
+
     h1 {
         font-size: 18px;
         text-transform: uppercase;
         margin: 0px auto 15px;
+        font-weight: 700;
+        border-bottom: 1px solid #DDD;
+        padding-bottom: 5px;
+        color: #A1BFB4;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #47c09d;
+
+        &.degree {
+            line-height: 16px;
+            margin: 0px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+    }
+
+    div.project, div.paper {
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        p.company {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0px;
+        }
+
+        p.link {
+            margin-top: 5px;
+        }
+
+        p.task {
+            &:before { content: '- '; }
+            margin-left: 30px;
+            margin-bottom: 0px;
+        }
+
+        p.tech {
+            &:before {
+                content: '- Technologies: ';
+                font-weight: 700;
+            }
+
+            margin-left: 30px;
+            margin-top: 5px;
+        }
     }
 }
+
+
+body.print {
+    background-color: #FFF;
+
+    div.section {
+        border: 0px;
+    }
+
+    .noprint { display: none; }
+}
+

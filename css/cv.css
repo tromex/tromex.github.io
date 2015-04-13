@@ -1,5 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700);
 body {
   background-color: #E5E5E5;
+  font-family: 'Open Sans', sans-serif;
+}
+#me {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  border: 0px;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
+}
+.text-light {
+  font-weight: 300;
+}
+.text-black {
+  color: #000;
 }
 div.section {
   border-width: 1px 1px 2px;
@@ -14,8 +31,89 @@ div.section {
   margin: 10px 0px 20px;
   padding: 20px;
 }
+div.section.closed div.section-content {
+  display: none;
+}
+div.section span.col-cv-left {
+  width: 220px;
+  text-align: right;
+  float: left;
+}
+@media (max-width: 768px) {
+  div.section span.col-cv-left {
+    width: 110px;
+  }
+}
+div.section span.col-cv-right {
+  padding-left: 70px;
+  float: left;
+}
+div.section div.row div {
+  padding-right: 5%;
+}
 div.section h1 {
   font-size: 18px;
   text-transform: uppercase;
   margin: 0px auto 15px;
+  font-weight: 700;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 5px;
+  color: #A1BFB4;
+}
+div.section h2 {
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #47c09d;
+}
+div.section h2.degree {
+  line-height: 16px;
+  margin: 0px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+div.section div.project h3,
+div.section div.paper h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+div.section div.project p.company,
+div.section div.paper p.company {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+div.section div.project p.link,
+div.section div.paper p.link {
+  margin-top: 5px;
+}
+div.section div.project p.task,
+div.section div.paper p.task {
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+div.section div.project p.task:before,
+div.section div.paper p.task:before {
+  content: '- ';
+}
+div.section div.project p.tech,
+div.section div.paper p.tech {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+div.section div.project p.tech:before,
+div.section div.paper p.tech:before {
+  content: '- Technologies: ';
+  font-weight: 700;
+}
+body.print {
+  background-color: #FFF;
+}
+body.print div.section {
+  border: 0px;
+}
+body.print .noprint {
+  display: none;
 }
