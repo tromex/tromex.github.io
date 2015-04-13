@@ -123,8 +123,14 @@ div.section div.study p.tech:before {
   content: '- Technologies: ';
   font-weight: 700;
 }
+.onlyprint {
+  display: none;
+}
 body.print {
   background-color: #FFF;
+}
+body.print .onlyprint {
+  display: block;
 }
 body.print div.section {
   border: 0px;

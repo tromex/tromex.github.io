@@ -123,9 +123,12 @@ div.section {
     }
 }
 
+.onlyprint { display: none; }
 
 body.print {
     background-color: #FFF;
+
+    .onlyprint { display: block; }
 
     div.section {
         border: 0px;
