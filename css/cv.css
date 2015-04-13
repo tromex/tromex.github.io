@@ -23,6 +23,7 @@ img.me {
   color: #000;
 }
 div.section {
+  position: relative;
   border-width: 1px 1px 2px;
   border-style: solid;
   border-color: #D8D8D8;
@@ -31,8 +32,23 @@ div.section {
   margin: 10px 0px 20px;
   padding: 20px;
 }
+div.section.closed button.open {
+  display: block;
+}
 div.section.closed div.section-content {
   display: none;
+}
+div.section button.open {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #A1BFB4;
 }
 div.section p.item {
   margin-bottom: 0px;
@@ -123,18 +139,21 @@ div.section div.study p.tech:before {
   content: '- Technologies: ';
   font-weight: 700;
 }
-.onlyprint {
+.print-only {
   display: none;
 }
 body.print {
   background-color: #FFF;
 }
-body.print .onlyprint {
+body.print .print-none {
+  display: none !important;
+}
+body.print .print-only {
   display: block;
 }
 body.print div.section {
   border: 0px;
 }
-body.print .noprint {
-  display: none;
+body.print div.section.closed.print-open div.section-content {
+  display: block;
 }

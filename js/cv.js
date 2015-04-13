@@ -11,6 +11,9 @@ $(function () {
     $(window).hashchange(function() {
         hashHandler();
     });
+    $(window).hashchange(); // kick
 
-    $(window).hashchange();
+    $('button.open').on('click', function() {
+        $(this).parent().removeClass('closed');
+    });
 });
