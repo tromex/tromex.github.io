@@ -32,14 +32,13 @@ div.section {
   margin: 10px 0px 20px;
   padding: 20px;
 }
-div.section.closed button.open {
-  display: block;
+div.section.closed button.open:before {
+  content: '+';
 }
 div.section.closed div.section-content {
   display: none;
 }
 div.section button.open {
-  display: none;
   position: absolute;
   top: 12px;
   right: 15px;
@@ -49,6 +48,9 @@ div.section button.open {
   text-transform: uppercase;
   font-weight: 700;
   color: #A1BFB4;
+}
+div.section button.open:before {
+  content: '-';
 }
 div.section p.item {
   margin-bottom: 0px;

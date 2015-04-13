@@ -41,8 +41,8 @@ div.section {
     padding: 20px;
 
     &.closed {
-        button.open {
-            display: block;
+        button.open:before {
+            content: '+';
         }
 
         div.section-content {
@@ -51,7 +51,9 @@ div.section {
     }
 
     button.open {
-        display: none;
+        &:before {
+            content: '-';
+        }
 
         position: absolute;
         top: 12px;

@@ -14,6 +14,6 @@ $(function () {
     $(window).hashchange(); // kick
 
     $('button.open').on('click', function() {
-        $(this).parent().removeClass('closed');
+        $(this).parent().toggleClass('closed');
     });
 });
