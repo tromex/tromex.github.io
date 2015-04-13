@@ -108,6 +108,12 @@ div.section div.subsection div.simplified button.more {
 div.section div.subsection div.extended {
   display: none;
 }
+div.section div.subsection.extended div.simplified {
+  display: none;
+}
+div.section div.subsection.extended div.extended {
+  display: block;
+}
 div.section div.project h3,
 div.section div.paper h3,
 div.section div.study h3 {
@@ -176,4 +182,12 @@ body.print div.section {
 }
 body.print div.section.closed.print-open div.section-content {
   display: block;
+}
+body.print div.section div.subsection div.simplified,
+body.print div.section div.subsection.extended div.simplified {
+  display: block;
+}
+body.print div.section div.subsection div.extended,
+body.print div.section div.subsection.extended div.extended {
+  display: none;
 }

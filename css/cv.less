@@ -136,6 +136,16 @@ div.section {
         div.extended {
             display: none;
         }
+
+        &.extended {
+            div.simplified {
+                display: none;
+            }
+
+            div.extended {
+                display: block;
+            }
+        }
     }
 
     div.project, div.paper, div.study {
@@ -186,6 +196,11 @@ body.print {
 
         &.closed.print-open div.section-content {
             display: block;
+        }
+
+        div.subsection, div.subsection.extended {
+           div.simplified { display: block; }
+           div.extended { display: none; }
         }
     }
 }
