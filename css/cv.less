@@ -3,8 +3,16 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700');
 
 body {
-    background-color: #E5E5E5;
+    background-color: #FBFBFB;
     font-family: 'Open Sans', sans-serif;
+
+    div.container {
+        width: 850px;
+
+        @media (max-width: 860px) {
+            width: 100%;
+        }
+    }
 }
 
 #me {
@@ -34,13 +42,15 @@ div.section {
     position: relative;
     border-width: 1px 1px 2px;
     border-style: solid;
-    border-color: #D8D8D8;
+    border-color: #ECECEC; // #D8D8D8 (google-plus)
     border-image: none;
     background-color: #FFF;
     margin: 10px 0px 20px;
-    padding: 20px;
+    padding: 35px;
 
     &.closed {
+        padding-bottom: 0px;
+
         button.open:before {
             content: '+';
         }
@@ -56,12 +66,12 @@ div.section {
         }
 
         position: absolute;
-        top: 12px;
+        top: 26px;
         left: 0px;
 
         width: 100%;
         text-align: right;
-        padding-right: 20px;
+        padding-right: 38px;
 
         border: none;
         background-color: transparent;
@@ -69,6 +79,12 @@ div.section {
         text-transform: uppercase;
         font-weight: 700;
         color: #A1BFB4;
+    }
+
+    p.text-justify {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 14px;
     }
 
     p.item {
@@ -93,11 +109,11 @@ div.section {
     h1 {
         font-size: 18px;
         text-transform: uppercase;
-        margin: 0px auto 15px;
+        margin: 0px auto 20px;
         font-weight: 700;
         border-bottom: 1px solid #DDD;
-        padding-bottom: 5px;
-        color: #A1BFB4;
+        padding-bottom: 10px;
+        color: #A1BFB4; // #337AB7 (blue)
     }
 
     h2 {

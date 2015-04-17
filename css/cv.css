@@ -1,7 +1,15 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700');
 body {
-  background-color: #E5E5E5;
+  background-color: #FBFBFB;
   font-family: 'Open Sans', sans-serif;
+}
+body div.container {
+  width: 850px;
+}
+@media (max-width: 860px) {
+  body div.container {
+    width: 100%;
+  }
 }
 #me {
   font-size: 18px;
@@ -26,11 +34,14 @@ div.section {
   position: relative;
   border-width: 1px 1px 2px;
   border-style: solid;
-  border-color: #D8D8D8;
+  border-color: #ECECEC;
   border-image: none;
   background-color: #FFF;
   margin: 10px 0px 20px;
-  padding: 20px;
+  padding: 35px;
+}
+div.section.closed {
+  padding-bottom: 0px;
 }
 div.section.closed button.open:before {
   content: '+';
@@ -40,11 +51,11 @@ div.section.closed div.section-content {
 }
 div.section button.open {
   position: absolute;
-  top: 12px;
+  top: 26px;
   left: 0px;
   width: 100%;
   text-align: right;
-  padding-right: 20px;
+  padding-right: 38px;
   border: none;
   background-color: transparent;
   font-size: 26px;
@@ -54,6 +65,11 @@ div.section button.open {
 }
 div.section button.open:before {
   content: '-';
+}
+div.section p.text-justify {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 14px;
 }
 div.section p.item {
   margin-bottom: 0px;
@@ -74,10 +90,10 @@ div.section p.item span.col-cv-right {
 div.section h1 {
   font-size: 18px;
   text-transform: uppercase;
-  margin: 0px auto 15px;
+  margin: 0px auto 20px;
   font-weight: 700;
   border-bottom: 1px solid #DDD;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   color: #A1BFB4;
 }
 div.section h2 {
