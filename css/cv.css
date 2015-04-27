@@ -195,6 +195,7 @@ body.print .print-only {
 }
 body.print div.section {
   border: 0px;
+  padding-bottom: 0px;
 }
 body.print div.section.closed.print-open div.section-content {
   display: block;
