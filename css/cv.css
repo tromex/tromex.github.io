@@ -208,3 +208,9 @@ body.print div.section div.subsection div.extended,
 body.print div.section div.subsection.extended div.extended {
   display: none;
 }
+body.print div.section h3 {
+  font-size: 18px;
+}
+body.print p.text-justify {
+  font-size: 14px;
+}
