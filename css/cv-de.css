@@ -1,0 +1,216 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700');
+body {
+  background-color: #FBFBFB;
+  font-family: 'Open Sans', sans-serif;
+}
+body div.container {
+  width: 850px;
+}
+@media (max-width: 860px) {
+  body div.container {
+    width: 100%;
+  }
+}
+#me {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  border: 0px;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
+}
+img.me {
+  width: 150px;
+  float: right;
+}
+.text-light {
+  font-weight: 300;
+}
+.text-black {
+  color: #000;
+}
+div.section {
+  position: relative;
+  border-width: 1px 1px 2px;
+  border-style: solid;
+  border-color: #ECECEC;
+  border-image: none;
+  background-color: #FFF;
+  margin: 10px 0px 20px;
+  padding: 35px;
+}
+div.section.closed {
+  padding-bottom: 0px;
+}
+div.section.closed button.open:before {
+  content: '+';
+}
+div.section.closed div.section-content {
+  display: none;
+}
+div.section button.open {
+  position: absolute;
+  top: 26px;
+  left: 0px;
+  width: 100%;
+  text-align: right;
+  padding-right: 38px;
+  border: none;
+  background-color: transparent;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #A1BFB4;
+}
+div.section button.open:before {
+  content: '-';
+}
+div.section p.text-justify {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 14px;
+}
+div.section p.item {
+  margin-bottom: 0px;
+}
+div.section p.item span.col-cv-left {
+  width: 220px;
+  text-align: right;
+  float: left;
+}
+@media (max-width: 768px) {
+  div.section p.item span.col-cv-left {
+    width: 110px;
+  }
+}
+div.section p.item span.col-cv-right {
+  padding-left: 70px;
+}
+div.section h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0px auto 20px;
+  font-weight: 700;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 10px;
+  color: #A1BFB4;
+}
+div.section h2 {
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #47c09d;
+}
+div.section h2.degree {
+  line-height: 16px;
+  margin: 0px;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+div.section div.subsection div.simplified h3 {
+  font-size: 14px;
+  padding-left: 10px;
+  margin-top: 2px;
+  font-weight: 600;
+}
+div.section div.subsection div.simplified h3:before {
+  content: '- ';
+}
+div.section div.subsection div.simplified button.more {
+  margin-left: 30px;
+}
+div.section div.subsection div.extended {
+  display: none;
+}
+div.section div.subsection.extended div.simplified {
+  display: none;
+}
+div.section div.subsection.extended div.extended {
+  display: block;
+}
+div.section div.project h3,
+div.section div.paper h3,
+div.section div.study h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+div.section div.project p.company,
+div.section div.paper p.company,
+div.section div.study p.company,
+div.section div.project p.institution,
+div.section div.paper p.institution,
+div.section div.study p.institution {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+div.section div.project p.link,
+div.section div.paper p.link,
+div.section div.study p.link {
+  margin-top: 5px;
+}
+div.section div.project p.task,
+div.section div.paper p.task,
+div.section div.study p.task,
+div.section div.project p.info,
+div.section div.paper p.info,
+div.section div.study p.info {
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+div.section div.project p.task:before,
+div.section div.paper p.task:before,
+div.section div.study p.task:before,
+div.section div.project p.info:before,
+div.section div.paper p.info:before,
+div.section div.study p.info:before {
+  content: '- ';
+}
+div.section div.project p.tech,
+div.section div.paper p.tech,
+div.section div.study p.tech {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+div.section div.project p.tech:before,
+div.section div.paper p.tech:before,
+div.section div.study p.tech:before {
+  content: '- Technologien: ';
+  font-weight: 700;
+}
+.print-only {
+  display: none;
+}
+body.print {
+  background-color: #FFF;
+}
+body.print .print-none {
+  display: none !important;
+}
+body.print .print-only {
+  display: block;
+}
+body.print div.section {
+  border: 0px;
+  padding-bottom: 0px;
+}
+body.print div.section.closed.print-open div.section-content {
+  display: block;
+}
+body.print div.section div.subsection div.simplified,
+body.print div.section div.subsection.extended div.simplified {
+  display: block;
+}
+body.print div.section div.subsection div.extended,
+body.print div.section div.subsection.extended div.extended {
+  display: none;
+}
+body.print div.section h3 {
+  font-size: 18px;
+}
+body.print p.text-justify {
+  font-size: 14px;
+}
